@@ -16,6 +16,10 @@ head {
 body {
   font-family: 'Roboto', sans-serif;
 }
+
+.logo {
+  text-decoration: none;
+}
 .logo {
   color: #2196f3;
   font-family: 'Raleway', sans-serif;
@@ -36,6 +40,10 @@ body {
 .second-name {
   color: #ffffff;
 }
+.site-nav {
+  list-style: none;
+}
+
 .site-nav .link {
   color: #212121;
   font-weight: 500;
@@ -46,6 +54,9 @@ body {
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: #2196f3;
+}
+.site-contact {
+  list-style: none;
 }
 .site-contact .link {
   color: #757575;
@@ -88,6 +99,9 @@ body {
 .features-work {
   background-color: #f5f5f5;
 }
+.features-list {
+  list-style: none;
+}
 .features-list .title {
   color: #212121;
   font-weight: 700;
@@ -102,8 +116,15 @@ body {
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
 }
+
+.section-work .section-work-ex {
+  list-style: none;
+}
 .section-work {
   background-color: #f5f5f5;
+}
+.part-section .list {
+  list-style: none;
 }
 .section-work .title {
   font-weight: 700;
@@ -142,6 +163,9 @@ body {
 footer {
   background-color: #2f303a;
 }
+.site-contact-list {
+  list-style: none;
+}
 .site-contact-list .link-location {
   font-size: 14px;
   line-height: calc(24 / 14);
@@ -160,6 +184,9 @@ footer {
 .portfolio-general {
   background-color: #f5f5f5;
 }
+.portfolio-list .portfolio-list-link {
+  list-style: none;
+}
 .portfolio-list .portfolio-list-button {
   font-weight: 500;
   font-size: 14px;
@@ -173,6 +200,9 @@ footer {
   background-color: #2196f3;
 }
 
+.portfolio-examples .list {
+  list-style: none;
+}
 .portfolio-examples .portfolio-header {
   font-weight: 700;
   font-size: 18px;
