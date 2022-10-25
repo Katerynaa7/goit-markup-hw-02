@@ -17,13 +17,13 @@ background: #2196F3
   --accent-color: #2196f3;
 }
 head {
-  background-color: #ffffff;
+  background-color: var(--additional-color);
 }
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
-  background-color: #ffffff;
-  color: #212121;
+  background-color: var(--additional-color);
+  color: var(--primary-text-color);
 }
 
 .logo {
@@ -59,7 +59,6 @@ body {
 .site-nav .link {
   color: var(--primary-text-color);
   font-weight: 500;
-  font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
 }
@@ -113,8 +112,7 @@ body {
 .features-list {
   list-style: none;
 }
-.features-list .title {
-  color: inherit;
+.features-list .feature-title {
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -132,12 +130,11 @@ body {
 .part-section .list {
   list-style: none;
 }
-.title {
+.section-title {
   font-size: 36px;
   line-height: calc(42 / 36);
   text-align: center;
   letter-spacing: 0.03em;
-  color: inherit;
 }
 
 .list .part-second-title {
@@ -146,7 +143,6 @@ body {
   line-height: calc(19 / 16);
   text-align: center;
   letter-spacing: 0.03em;
-  color: inherit;
 }
 .list .part-list-element {
   font-size: 16px;
@@ -158,6 +154,9 @@ body {
 footer {
   background-color: #2f303a;
 }
+address {
+  font-style: normal;
+}
 .site-contact-list .link-location {
   list-style: none;
   text-decoration: none;
@@ -168,14 +167,23 @@ footer {
 }
 
 .site-contact-list .link-location {
-  font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: var(--additional-color);
 }
-
-.site-contact-list .link-contact {
-  font-size: 14px;
+.site-contact-list .link-location:hover,
+.site-contact-list .link-location:focus {
+  color: var(--accent-color);
+}
+.site-contact-list .link-contact-list:hover,
+.site-contact-list .link-contact-list:focus {
+  color: var(--accent-color);
+}
+.site-contact-list .link-contact-list {
+  text-decoration: none;
+  list-style: none;
+}
+.site-contact-list .link-contact-list {
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
@@ -195,7 +203,7 @@ footer {
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   cursor: pointer;
-  color: #212121;
+  color: var(--primary-text-color);
 }
 .portfolio-list .portfolio-list-button:hover,
 .portfolio-list .portfolio-list-button:focus {
@@ -210,7 +218,7 @@ footer {
   font-size: 18px;
   line-height: calc(36 / 18);
   letter-spacing: 0.06em;
-  color: inherit;
+  color: var(--primary-text-color);
 }
 .portfolio-examples .portfolio-descr {
   font-size: 16px;
