@@ -113,6 +113,7 @@ body {
   list-style: none;
 }
 .features-list .feature-title {
+  font-size: 36px;
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -213,6 +214,9 @@ address {
 
 .portfolio-examples .list {
   list-style: none;
+}
+.portfolio-examples-link {
+  text-decoration: none;
 }
 .portfolio-examples .portfolio-header {
   font-size: 18px;
